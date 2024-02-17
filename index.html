@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calorias</title>
+</head>
+<body>
+
+    <h1 style="font-family: Empire; color: aliceblue;
+      text-shadow: 2px  0px 0px black,
+               0px  3px 0px black,
+              -3px  0px 0px black,
+               0px -3px 0px black;">Calcula tus calorias diarias necesarias</h1>
+    <section class="Main">
+        <section class="pesoxedad">
+            <div class="Pesoedad">
+                <label for="">Edad:</label>
+                <input type="number" name="edad" id="edad" class="input" placeholder="Tu Edad">
+            </div>
+
+            <div class="Pesoedad" style="margin-right: 20px;">
+                <label for="">Altura:</label>
+                <input type="number" name="altura" id="altura" class="input" placeholder="Altura en centimetros">
+            </div>
+
+            <div class="Pesoedad" style="margin-right: 20px;">
+                <label for="">Factor Act:</label>
+                <input type="number" name="Fa" id="Fa" class="input" placeholder="Ver tabla debajo">
+            </div>
+
+            <div class="Pesoedad">
+                <label for="">Peso:</label>
+                <input type="number" name="peso" id="peso" class="input" placeholder="Peso en kilos">
+            </div>
+        </section>
+           
+
+
+        <section class="Main2">
+            <div class="TMB">
+                <label for="">TMB: <span id="tmb">0000</span></label>
+            </div>
+
+            <div class="Termo">
+                <label for="">Termogenesis: <span id="termo">0000</span></label>
+            </div>
+        </section>
+
+            <div class="Total">
+                <label for="">Total de Kcal: <span id="total">0000</span> Kcal</label>
+            </div>
+
+            <section class="diferencia">
+                <div class="sup">
+                    <label for="">Superavit: <br> <span id="super">0000</span> Kcal</label>
+                </div>
+
+                <div class="def">
+                    <label for="">Deficit: <br> <span id="defic">0000</span> Kcal</label>
+                </div>
+            </section>
+
+            <div style="display: flex; flex-direction: row; margin-top: 20px;">
+                <button class="boton" onclick="calcular()">Calcular</button>
+                <button class="boton" onclick="reiniciar()">Reiniciar</button>
+            </div>
+    </section>
+
+    <div style="width: 1000px; margin-left: 100px;">
+        <p style="margin-bottom: -15px;">La tasa metabólica basal (TMB) es la cantidad mínima de energía que necesita tu cuerpo para sobrevivir realizando las funciones básicas, tales como respirar, parpadear, filtrar la sangre, regular la temperatura del cuerpo o sintetizar hormonas.</p> <br>
+        <p style="margin-bottom: -15px;">El superávit calórico es el estado metabólico de un cuerpo producido por un balance energético positivo (consumir más calorías en tu dieta con una buena selección de alimentos) Etapa de volumen</p> <br>
+        <p style="margin-bottom: -15px;">El déficit calórico se define como la falta de calorías para reducir y mantener un peso equilibrado del cuerpo, es decir, quemar más de lo que comemos para no engordar e incluso perder peso. Etapa de definicion</p> <br>
+        <p style="margin-bottom: -15px;">La termogénesis es la capacidad de generar calor en el organismo debido a las reacciones metabólicas. La disipación de calor equilibra esta generación interna dando lugar a una homeostasis térmica en las célula que en los mamífero como el ser humano alcanza un valor estático de aproximadamente 37 °C. <br>
+        EN ESTE CALCULO SE MULTIPLICA LA TMB POR LA TERMOGENESIS QUE ES DE 1,1 </p> <br>
+        
+        <p style="font-weight: bold; margin-bottom: -15px;">ESTE CALCULO(SOLO PARA HOMBRES) ESTA BASADO EN UN DEFICIT Y SUPERAVIT CON UNA DIFERENCIA O UNA ADICION, RESPECTIVAMENTE, DE 500 CALORIAS (AVANZADO). <br>
+            SI SOS PRINCIPIANTE TU RANGO ES DE 400 A 800 CALORIAS. <br>
+            SI SOS AVANZADO TU RANGO ES DE 200-500 CALORIAS
+        </p> <br>
+        <p>BIBLIOGRAFIA DE ERIC HELMS <br>
+        Elegir el nivel de actividad que mejor se adapte a tu vida y elegir un valor entre ese rango de actividad</p>
+        <img src="./FA-eric-helms-min-1024x254.png" alt="">
+    </div>
+    
+    <script src="./funcion.js"></script>
+</body>
+</html>
