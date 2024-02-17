@@ -8,11 +8,12 @@ body{/* Purple Love Gradient */
 }
 
 .Main{
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1200px;
+    width: 1000px;
     height: 500px;
     border-radius: 20px 30px 25px 40px;
     border: 1px solid none;
