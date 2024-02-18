@@ -93,7 +93,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-
 .Total{
     margin-top: 50px;
     display: flex;
@@ -151,7 +150,104 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #cc2b5e;
 }
 
+.textos{
+    width: 1000px; 
+    margin-left: 100px;
+}
+
 @font-face {
     font-family: Empire;
     src: url('./Fonts/aAbsoluteEmpire.otf');
+}
+
+
+@media screen and (max-width: 400px){
+
+    .Main{
+        margin-left: -90px;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+        height: 650px;
+    }
+
+    .pesoxedad{
+        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    .Pesoedad{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        font-size: 22px;
+    }
+
+    .Pesoedad label{
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .Pesoedad input{
+        display: flex;
+        height: 2em;
+        width: 6em;
+        border-radius: 1em;
+        font-size: 15px;
+    }
+    
+    .Pesoedad input::placeholder{
+        color: gray;
+        font-size: 11px;
+    }
+    
+    .Main2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .Total{
+        margin-top: 30px;
+        font-size: 21px;
+        margin-left: 8px;
+        font-weight: bold;
+    }
+
+    .diferencia{
+        margin-left: 8px;
+        margin-top: 26px;
+        display: flex;
+        font-size: 22px;
+    }
+
+    .boton{
+        font-size: 18px;
+        height: 38px;
+        width: 140px;
+    }
+
+    .botones{
+        margin-left: 20px;
+    }
+    
+    .textos{
+        margin-left: -100px;
+        width: 350px;
+    }
+
+    .textos img{
+        height: 110px;
+        width: 350px;
+        margin-left: 3px;
+    }
+
+    .imagen2{
+        margin-left: -98px;
+        height: 200px;
+        width: 350px;
+    }
+    
 }

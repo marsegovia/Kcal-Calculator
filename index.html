@@ -8,12 +8,13 @@
 </head>
 <body>
 
-    <h1 style="font-family: Empire; color: aliceblue; margin-left: -100px;
+    <h1 class="titulo" style="font-family: Empire; color: aliceblue; margin-left: -100px;
       text-shadow: 2px  0px 0px black,
                0px  3px 0px black,
               -3px  0px 0px black,
                0px -3px 0px black;">Calcula tus calorias diarias necesarias</h1>
-    <section class="Main">
+
+<section class="Main">
         <section class="pesoxedad">
             <div class="Pesoedad">
                 <label for="">Edad:</label>
@@ -62,13 +63,13 @@
                 </div>
             </section>
 
-            <div style="display: flex; flex-direction: row; margin-top: 20px;">
+            <div class="botones" style="display: flex; flex-direction: row; margin-top: 20px;">
                 <button class="boton" onclick="calcular()">Calcular</button>
                 <button class="boton" onclick="reiniciar()">Reiniciar</button>
             </div>
     </section>
 
-    <div style="width: 1000px; margin-left: 100px;">
+    <div class="textos">
         <p style="margin-bottom: -15px;">La tasa metabólica basal (TMB) es la cantidad mínima de energía que necesita tu cuerpo para sobrevivir realizando las funciones básicas, tales como respirar, parpadear, filtrar la sangre, regular la temperatura del cuerpo o sintetizar hormonas.</p> <br>
         <p style="margin-bottom: -15px;">El superávit calórico es el estado metabólico de un cuerpo producido por un balance energético positivo (consumir más calorías en tu dieta con una buena selección de alimentos) Etapa de volumen</p> <br>
         <p style="margin-bottom: -15px;">El déficit calórico se define como la falta de calorías para reducir y mantener un peso equilibrado del cuerpo, es decir, quemar más de lo que comemos para no engordar e incluso perder peso. Etapa de definicion</p> <br>
@@ -82,9 +83,10 @@
         <p>BIBLIOGRAFIA DE ERIC HELMS <br>
         Elegir el nivel de actividad que mejor se adapte a tu vida y elegir un valor entre ese rango de actividad</p>
         <img src="./FA-eric-helms-min-1024x254.png" alt="">
-        <img src="./Captura de pantalla 2024-02-17 184711.png" alt="">
     </div>
-    
+
+    <img class="imagen2" src="./Captura de pantalla 2024-02-17 184711.png" alt="">
+
     <script src="./funcion.js"></script>
 </body>
 </html>
