@@ -8,10 +8,10 @@ function calcularCalorias() {
         var tmb = (10 * peso) + (6.25 * altura) - (5 * edad) + 5;
 
         // Calcular la Termogénesis
-        var termogenesis = factoractv * tmb * 1.1; // Porcentaje típico para la termogénesis
+        var termogenesis = tmb * 0.1; // Porcentaje típico para la termogénesis
 
         // Calcular el total de calorías necesarias (TMB + Termogénesis)
-        var total = tmb + termogenesis;
+        var total = (tmb * factoractv) + termogenesis;
 
         // Mostrar los resultados en la página
         if(peso > 0)
